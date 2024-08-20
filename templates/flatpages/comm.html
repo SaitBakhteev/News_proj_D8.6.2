@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    {% for i in cmts %}
+        <tr>
+        <td>{{ i.user.last_name }}</td>        
+        <td>{{ i.comment_text }}</td>
+        <td>{{ i.raiting }}</td>
+        <td>{{ i.post.author.user.username }}</td>
+        </tr>>
+        
+    {% endfor %}
+</table>
+</body>
+</html>

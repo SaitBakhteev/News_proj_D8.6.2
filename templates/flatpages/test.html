@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load crispy_forms_tags %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="post_id">Номер поста </label><input type="number" name="post_id"><br>
+    <label for="email">E-mail </label><input type="email" name="email">
+    {{ form }}
+    
+    
+    <input type="submit" value="TEST"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'flatpages/messages.html' %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+    <form action="" method="post">
+    {% csrf_token %}
+        <label for="client"><h6>client_name</h6></label>
+        <input type="text" name="client_name"><br>
+{#        <label for="date"><h6>date</h6></label>#}
+{#        <input type="date" name="date"><br>#}
+        <label for="message"><h6>message</h6></label>
+        <input type="text" name="message"><br>
+        <label for="message"><h6>e-mail</h6></label>
+        <input type="email" name="email">
+        
+    <input type="submit" value="send">
+    </form>
+{% endblock content  %}
+
+</body>
+</html>

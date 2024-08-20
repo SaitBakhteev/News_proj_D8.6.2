@@ -1,0 +1,14 @@
+{% extends 'flatpages/post.html' %}
+{% load crispy_forms_tags %}
+
+{% block edit %}
+    <!-- Форма для редактирования  публикации -->
+        <form action="" method="post" style="margin-left: 15px; margin-top: 15px ">
+            {% csrf_token %}
+                {{ form | crispy }}<br>
+             <input type="submit" value={{ button }}>
+        </form>
+{%  endblock edit %}
+
+
+    

@@ -1,0 +1,28 @@
+{% extends "flatpages/default.html" %}
+<!-- это бусполезный шаблон по причине наличия пакета allauth -->
+{% load custom_tags %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_field %}
+{% block content %}
+<h2> Войти в систему </h2>    
+    {% if request.user.is_authenticated %}
+        {% include 'protect/index.html' %}
+    {% else %}
+        <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        <table>
+        <tr>
+            <td>{{ form.username.label_tag  }}</td>
+            <td>{{ form.username }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.password.label_tag }}</td>
+            <td>{{ form.password }}</td>
+        </tr>
+        </table>
+
+        <input type="submit" value="Войти">
+        </form>
+        <button> <a href="/sign/signup"> Регистрация </a></button>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'flatpages/default.html' %}
+    {% load custom_tags %}
+    {% load filter %}
+    {% load crispy_forms_tags %}
+    {% load crispy_forms_field %}
+
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Test</title>
+    {% endblock title    %}
+</head>
+
+<body>
+
+{% block content %}
+    <h4  style="margin-top: 5px; margin-left: 15px"><a href="{% url 'main_page' %}"> На главную страницу </a></h4>
+        
+    
+{% block edit %} <!-- Блок меняющий форму для редактирования -->
+    <!-- Форма для просмотра публикации -->
+    <form action="" method="get" style="margin-left: 15px; margin-top: 10px">
+        {% csrf_token %}
+            {{ form | crispy }}
+
+            <a href="edit/"> <input type="button" value="Редактировать" /></a>
+            <a href="delete/"> <input type="button" value="Удалить пост" /></a>
+    </form>
+    {%  endblock edit %}
+{% endblock content %}
+</body>
+
+</html>

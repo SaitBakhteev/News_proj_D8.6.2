@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'flatpages/default.html' %}
+    {% load filter %} <!-- загрузка фильтра -->
+    {% load custom_tags %}
+    {% load crispy_forms_tags %}
+    {% load crispy_forms_field %}
+    <meta charset="UTF-8">
+<!-- Изменение заголовочной части базового шаблона default -->
+{% block title %}    
+    <h5> Количество постов: {{ post | length }}</h5>
+{% endblock title %}
+</head>
+<body>
+
+{% block content %}
+
+        <!-- Блок, в котором отображаются формы для оформления подписки и отмены подписки на категории.
+     Отображается только на главной странице новостного портала-->
+    {% block subscriber %}
+        <br><table class="table-bordered" style="margin-left: 150px;
+            font-size: larger; background-color: seashell" ><tr>
+
+                <!-- Форма для оформления подписки -->
+                <td valign="top"><form action="" method="post" style="margin-left: 15px; margin-right: 15px">
+                        {% csrf_token %}                    
+                        {{ form|crispy }}
+                
+            <!-- после нажатия кнопки "Редактировать подписку" активизируeтся форма  -->
+                    {% if  edit_subscribe %}
+                    <input type="submit" Value ='Принять изменения' name="subscribe" >
+                    	{% else %}
+                    <input type="submit" Value ='Принять изменения' name="subscribe" disabled="disabled">
+                    {% endif %}                     
+                    <input type="submit" Value ='Редактировать подписку' name="subscribe">
+                </form></td>
+    
+            <td valign="top"><form action="{% url 'logout' %}" method="post" style="margin-left: 15px; margin-right: 15px">
+                {% csrf_token %}
+                    <h4>Пользователь с логином <b><i>{{ request.user }}<br></i></b></h4>
+                <input type="submit" value="Выйти">
+            </form>                
+            {% if is_not_author %}
+                <button type="button" style="margin-left: 15px; margin-top: 15px" ><a href="{% url 'add_to_authors' %}">Стать автором</a></button>
+            {% endif %}            
+            </td>
+        
+        </tr></table>
+    {% endblock subscriber %}
+
+    <!-- Верхняя часть страницы под основной шапкой, отображающая вошедшего пользователя -->    
+        <div  style="margin-left: 150px; margin-top: 20px; font-size: xx-large">
+        {% block filter %}            
+                <a href="{% url 'search_post' %}">Открыть фильтр</a><br>
+                <a href="{% url 'create_post' %}"><input type="button" value="Добавить публикацию"/></a><br>
+            
+        {% endblock filter %}
+            {% if page_obj.has_previous %} <!-- если открыта не первая страница -->           
+                <a href="?{% url_replace page=1 %}">1</a>
+                {% if page_obj.previous_page_number != 1 and page_obj.previous_page_number != 2 %}
+                    ... <!-- многоточие, если номера предыдущей стьраницы и первой страницы отличаются более, чем на 1 -->
+                   <!-- отображается ссылка на номер предыдущей соседней страницы -->           
+               {% endif %}
+            
+               {% if page_obj.previous_page_number != 1 %}
+                    <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+               {% endif %}
+            {% endif %}
+    
+        {{ page_obj.number }} <!-- отображается номер открытой страницы -->
+
+        <!-- Отображение ссылки на номер следующей соседней страницы -->
+            {% if page_obj.has_next %} <!-- если не достигнута последняя страница -->        
+                <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+                {% if page_obj.next_page_number !=  paginator.num_pages  %} <!-- если соседняя страница не является последней -->                    
+                    ...
+                    <a href="?{% url_replace page=paginator.num_pages %}">{{ paginator.num_pages }}</a>
+                {%  endif %}                
+            {% endif %}
+        </div>
+   
+<!-- Таблица, выводящая новости/статьи -->
+    <!-- Постраничный вывод новостей -->   
+    <table class="table-bordered"  style="background-color: #babbbc; font-size: medium; 
+        border-color: grey; margin-left: 150px " cellspacing="10">
+        <tbody> 
+            <tr>
+                <td width="800" style="border-width: 5px"><h5 style="margin-left: 15px">Заголовок поста </h5></td>
+                <td width="300" style="border-width: 5px"><h5 style="margin-left: 15px">Дата публикации</h5></td>
+                <td width="400" style="border-width: 5px"><h5 style="margin-left: 15px">Выдержка из статьи</h5></td>
+            </tr>
+
+            {% if post %}        
+                    <!-- Содержимое ячеек таблицы -->
+                    {% for i in post %}
+                        <tr>                
+                            <td style="border-width: 5px"><p style="margin-left: 15px">{{ i.title |censor:'секс'|censor:'Секс'}}</p></td>
+                            <td style="border-width: 5px"><p style="margin-left: 15px">{{i.create_time | date:'d.m.Y H:i:s' }}</p></td>
+                            <td style="border-width: 5px"><a href="/news/{{ i.pk }}/" style="margin-left: 15px">
+                                {{ i.content|truncatechars:20 |censor:'секс'|censor:'Секс'}}</a></td>
+                        </tr>
+                    {% endfor %}
+            {% endif %}
+    </tbody></table>
+{% endblock content %}
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="309f2f09-8c12-4134-97b7-c23d249271fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3_1.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3_1.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject_News_Portal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject_News_Portal/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_portal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_portal/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sign/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/403.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flatpages/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/flatpages/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flatpages/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/protect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/protect/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2e8yOY1JmODWP6Kz8ncYhholuHr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.django_News_project_D7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TEST.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Pyth_learn/Projects/django_News_project_D7/templates/allauth&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates\allauth" />
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates\flatpages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates\protect" />
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates\account" />
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates" />
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates\flatpages\sign" />
+      <recent name="D:\Pyth_learn\Projects\django_News_project_D7\templates\flatpages\protect" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.TEST">
+    <configuration name="TEST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="django_News_project_D7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/djangoProject_News_Portal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/djangoProject_News_Portal/TEST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="django_News_project_D7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="django_News_project_D7" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django_News_project_D7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoProject_News_Portal.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.TEST" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="309f2f09-8c12-4134-97b7-c23d249271fa" name="Changes" comment="" />
+      <created>1711300469323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711300469323</updated>
+      <workItem from="1711300470695" duration="14487000" />
+      <workItem from="1711525161234" duration="24061000" />
+      <workItem from="1711568031609" duration="2024000" />
+      <workItem from="1711630110831" duration="6227000" />
+      <workItem from="1711688482952" duration="15693000" />
+      <workItem from="1711722737349" duration="6699000" />
+      <workItem from="1711734060605" duration="5450000" />
+      <workItem from="1711744053514" duration="613000" />
+      <workItem from="1711814132718" duration="12598000" />
+      <workItem from="1711881723573" duration="20962000" />
+      <workItem from="1711980979076" duration="8821000" />
+      <workItem from="1712055745939" duration="6176000" />
+      <workItem from="1712157511019" duration="1610000" />
+      <workItem from="1712249702285" duration="1084000" />
+      <workItem from="1712305136519" duration="7479000" />
+      <workItem from="1712417766564" duration="6067000" />
+      <workItem from="1712475620865" duration="14444000" />
+      <workItem from="1715276077816" duration="663000" />
+      <workItem from="1715360752978" duration="3438000" />
+      <workItem from="1715426876107" duration="351000" />
+      <workItem from="1715531833298" duration="1579000" />
+      <workItem from="1715586654275" duration="8337000" />
+      <workItem from="1716706300209" duration="5025000" />
+      <workItem from="1716791705786" duration="3777000" />
+      <workItem from="1716987547092" duration="1231000" />
+      <workItem from="1717872760867" duration="4557000" />
+      <workItem from="1717918349087" duration="21296000" />
+      <workItem from="1718026793159" duration="11414000" />
+      <workItem from="1718188398329" duration="8133000" />
+      <workItem from="1718202168556" duration="1987000" />
+      <workItem from="1718270101244" duration="3337000" />
+      <workItem from="1718459584466" duration="2419000" />
+      <workItem from="1718528395241" duration="16861000" />
+      <workItem from="1718738202768" duration="1188000" />
+      <workItem from="1718803050611" duration="22345000" />
+      <workItem from="1718866794849" duration="11943000" />
+      <workItem from="1718887187234" duration="17684000" />
+      <workItem from="1718950887644" duration="1908000" />
+      <workItem from="1719059660791" duration="597000" />
+      <workItem from="1719124477749" duration="588000" />
+      <workItem from="1719379892614" duration="595000" />
+      <workItem from="1719668694935" duration="4728000" />
+      <workItem from="1719734172163" duration="15009000" />
+      <workItem from="1719861197845" duration="4111000" />
+      <workItem from="1719933819474" duration="5153000" />
+      <workItem from="1719989623372" duration="6725000" />
+      <workItem from="1720107077381" duration="4548000" />
+      <workItem from="1720248705736" duration="16527000" />
+      <workItem from="1720367499748" duration="4309000" />
+      <workItem from="1720467510684" duration="882000" />
+      <workItem from="1720554444350" duration="2585000" />
+      <workItem from="1720617911363" duration="1967000" />
+      <workItem from="1720723283878" duration="2130000" />
+      <workItem from="1720807283162" duration="3121000" />
+      <workItem from="1720877413175" duration="11940000" />
+      <workItem from="1720907425329" duration="4555000" />
+      <workItem from="1720939285406" duration="1461000" />
+      <workItem from="1721054001588" duration="5025000" />
+      <workItem from="1721136748285" duration="12326000" />
+      <workItem from="1721192683298" duration="9347000" />
+      <workItem from="1721330189524" duration="7906000" />
+      <workItem from="1721347385666" duration="16177000" />
+      <workItem from="1721423618809" duration="1751000" />
+      <workItem from="1721659904970" duration="2036000" />
+      <workItem from="1722019673994" duration="3388000" />
+      <workItem from="1722085861288" duration="7929000" />
+      <workItem from="1722165502070" duration="596000" />
+      <workItem from="1722174171113" duration="2664000" />
+      <workItem from="1722246358075" duration="11179000" />
+      <workItem from="1722323731397" duration="1037000" />
+      <workItem from="1722406783390" duration="13543000" />
+      <workItem from="1722543212885" duration="3475000" />
+      <workItem from="1722592775805" duration="8925000" />
+      <workItem from="1722701711323" duration="14196000" />
+      <workItem from="1722753375410" duration="4146000" />
+      <workItem from="1722944597595" duration="5831000" />
+      <workItem from="1722968752010" duration="1302000" />
+      <workItem from="1722971087581" duration="7598000" />
+      <workItem from="1723025858683" duration="7596000" />
+      <workItem from="1723197634011" duration="14600000" />
+      <workItem from="1723370249130" duration="17891000" />
+      <workItem from="1723444273860" duration="14906000" />
+      <workItem from="1723531267635" duration="9089000" />
+      <workItem from="1723701246983" duration="591000" />
+      <workItem from="1723812944595" duration="3178000" />
+      <workItem from="1723887817289" duration="4143000" />
+      <workItem from="1723900020613" duration="67000" />
+      <workItem from="1723900123855" duration="4126000" />
+      <workItem from="1723924577670" duration="3557000" />
+      <workItem from="1723928650778" duration="508000" />
+      <workItem from="1723929282028" duration="1871000" />
+      <workItem from="1723971598923" duration="27036000" />
+      <workItem from="1724046023845" duration="16225000" />
+      <workItem from="1724131041624" duration="22309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/django_News_project_D7$test.coverage" NAME="test Coverage Results" MODIFIED="1711894743047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/django_News_project_D7$TEST.coverage" NAME="TEST Coverage Results" MODIFIED="1723457717474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangoProject_News_Portal" />
+  </component>
+</project>

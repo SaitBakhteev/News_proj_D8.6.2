@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends 'flatpages/post.html' %}
+
+{% block content %}
+<h1>Удаление поста</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    <p><h6> Вы точно хотите удалить пост "{{ post.title }}"
+    автора {{ post.author }}
+    ?</h6></p>
+    <input type="submit" value="Удалить" style="background: #b02a37"/>
+</form>
+    <a href="/news/"> <input type="button" value="На главную" /></a>
+{% endblock content %}
+
+</body>
+</html>

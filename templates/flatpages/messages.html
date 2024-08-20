@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'flatpages/default.html' %}
+{% load custom_tags %}
+    {% load crispy_forms_tags %}
+    {% load crispy_forms_field %}
+
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Test</title>
+    {% endblock title    %}
+</head>
+
+<body>
+{% block content %}
+    <br><br>
+    {{ list }}
+<!-- Форма для отображения и редактирования публикации -->
+    {% if state %}:
+    <H2> {{ state }} </H2> <br>
+        {% else %}        
+    {% endif %}
+    <a href="/news/create/"> <input type="button" value="Добавить еще публикацию" />    </a><br>
+    <a href="/news/"> <input type="button" value="На главную" />    </a>
+{% endblock content %}
+</body>
+
+</html>

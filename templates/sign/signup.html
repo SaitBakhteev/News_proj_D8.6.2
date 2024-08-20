@@ -1,0 +1,15 @@
+{% extends "flatpages/default.html" %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_field %}
+{% block content %}
+    
+<table>
+    <tr><td colspan="2" align="center"><h2> Регистрация </h2></td></tr>
+    <tr><td width="50"></td>
+    <td><form method="post">
+            {% csrf_token %}
+            {{ form | crispy}}
+            <input type="submit" value="Продолжить">
+        </form></td></tr>
+</table>
+{% endblock %}
